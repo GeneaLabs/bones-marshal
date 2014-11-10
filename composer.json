@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Genealabs\\Bones\\Marshal": "src/GeneaLabs/Bones/Marshal"
+            "Genealabs\\Bones\\Marshal\\": "src/GeneaLabs/Bones/Marshal"
         }
     },
     "minimum-stability": "stable"

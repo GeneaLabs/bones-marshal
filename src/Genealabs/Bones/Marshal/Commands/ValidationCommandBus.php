@@ -1,6 +1,6 @@
 <?php namespace GeneaLabs\Bones\Marshal\Commands;
 
-class CommandValidator extends CommandMarshaller implements CommandExecutor
+class ValidationCommandBus extends BaseCommandBus implements CommandBus
 {
     public function execute($command)
     {

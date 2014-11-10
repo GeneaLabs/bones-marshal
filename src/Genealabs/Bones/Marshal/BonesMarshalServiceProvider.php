@@ -22,8 +22,9 @@ class BonesMarshalServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
-	}
+        $this->registerCommandBus();
+        $this->registerCommandTranslator();
+    }
 
 	/**
 	 * Get the services provided by the provider.
@@ -32,7 +33,24 @@ class BonesMarshalServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return [
+            'GeneaLabs\Bones\Marshal\Commands\CommandBus',
+            'GeneaLabs\Bones\Marshal\Commands\CommandTranslator',
+        ];
 	}
+
+    private function registerCommandBus()
+    {
+        $this->app->bindShared('GeneaLabs\Bones\Marshal\Commands\CommandBus', function () {
+            return $this->app->make('GeneaLabs\Bones\Marshal\Commands\ValidationCommandBus');
+        });
+    }
+
+    private function registerCommandTranslator()
+    {
+        $this->app->bindShared('GeneaLabs\Bones\Marshal\Commands\CommandTranslator', function () {
+            return 'GeneaLabs\Bones\Marshal\Commands\BaseCommandTranslator';
+        });
+    }
 
 }

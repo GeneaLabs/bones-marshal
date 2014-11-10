@@ -2,12 +2,12 @@
 
 use Illuminate\Foundation\Application;
 
-class CommandMarshaller implements CommandExecutor
+class BaseCommandBus implements CommandBus
 {
     protected $app;
     protected $commandTranslator;
 
-    public function __construct(Application $app, CommandTranslator $commandTranslator)
+    public function __construct(Application $app, BaseCommandTranslator $commandTranslator)
     {
         $this->app = $app;
         $this->commandTranslator = $commandTranslator;

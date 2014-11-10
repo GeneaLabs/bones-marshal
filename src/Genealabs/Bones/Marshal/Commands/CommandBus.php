@@ -4,7 +4,7 @@
  * Interface CommandExecutor
  * @package GeneaLabs\Bones\Marshal\Commands
  */
-interface CommandExecutor
+interface CommandBus
 {
     /**
      * @param $command

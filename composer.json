@@ -1,5 +1,6 @@
 {
     "name": "genealabs/bones-marshal",
+    "license": "MIT",
     "description": "Commanding and Eventing package.",
     "authors": [
         {
@@ -13,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Genealabs\\Bones\\Marshal\\": "src/GeneaLabs/Bones/Marshal"
+            "GeneaLabs\\Bones\\Marshal\\": "src/GeneaLabs/Bones/Marshal"
         }
     },
     "minimum-stability": "stable"

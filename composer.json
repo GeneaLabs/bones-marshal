@@ -1,0 +1,20 @@
+{
+    "name": "genealabs/bones-marshal",
+    "description": "Commanding and Eventing package.",
+    "authors": [
+        {
+            "name": "GeneaLabs, LLC",
+            "email": "hello@genealabs.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Genealabs\\Bones\\Marshal": "src/GeneaLabs/Bones/Marshal"
+        }
+    },
+    "minimum-stability": "stable"
+}

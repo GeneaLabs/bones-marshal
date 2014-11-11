@@ -22,8 +22,8 @@ class BonesMarshalServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-        $this->registerCommandBus();
         $this->registerCommandTranslator();
+        $this->registerCommandBus();
     }
 
 	/**
@@ -49,7 +49,7 @@ class BonesMarshalServiceProvider extends ServiceProvider {
     private function registerCommandTranslator()
     {
         $this->app->bindShared('GeneaLabs\Bones\Marshal\Commands\CommandTranslator', function () {
-            return 'GeneaLabs\Bones\Marshal\Commands\BaseCommandTranslator';
+            return 'GeneaLabs\Bones\Marshal\Commands\ValidationCommandTranslator';
         });
     }
 

@@ -15,7 +15,7 @@ class BaseCommandBus implements CommandBus
 
     public function execute($command)
     {
-        $handler = $this->commandTranslator->translateToHandler($command);
+        $handler = $this->commandTranslator->toHandler($command);
 
         return $this->app->make($handler)->handle($command);
     }

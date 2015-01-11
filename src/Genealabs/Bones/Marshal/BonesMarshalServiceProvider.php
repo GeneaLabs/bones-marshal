@@ -1,4 +1,4 @@
-<?php namespace Genealabs\Bones\Marshal;
+<?php namespace GeneaLabs\Bones\Marshal;
 
 use Illuminate\Support\ServiceProvider;
 

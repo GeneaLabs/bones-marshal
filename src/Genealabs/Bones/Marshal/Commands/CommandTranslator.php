@@ -1,11 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: mike
- * Date: 11/10/14
- * Time: 1:55 PM
- */
-namespace GeneaLabs\Bones\Marshal\Commands;
+<?php namespace GeneaLabs\Bones\Marshal\Commands;
 
 interface CommandTranslator
 {

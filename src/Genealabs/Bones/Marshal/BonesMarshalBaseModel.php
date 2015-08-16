@@ -4,7 +4,7 @@
 use GeneaLabs\Bones\Marshal\Events\EventGenerator;
 use Watson\Validating\ValidatingTrait;
 
-class BonesMarshalBaseModel extends \BaseModel
+class BonesMarshalBaseModel extends \Model
 {
     use ValidatingTrait;
     use EventGenerator;
